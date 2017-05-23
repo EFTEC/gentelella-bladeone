@@ -8,7 +8,7 @@ Unlikely other products, it only requires a single file BladeOne.php to runs. So
 
 ![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg "Gentelella Theme Browser Preview")
 
-**[Template Demo](https://colorlib.com/polygon/gentelella/index.html)**
+**[Live template Running on heroku](https://gentella-bladeone.herokuapp.com/index.php)**
 
 # Install using composer
 ``` 
