@@ -1,0 +1,25 @@
+<?php $_shouldextend['59248751de1cd']=1; ?>
+<?php $this->startSection('css'); ?>
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('title',$title); ?>
+<?php $this->startSection('content'); ?>
+
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Multilevel Menu <small> Page to demonstrate multilevel menu</small></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('js'); ?>
+
+<?php $this->stopSection(); ?>
+
+<?php if (@$_shouldextend['59248751de1cd']) { echo $this->runChild('_shared.master'); } ?>

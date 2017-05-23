@@ -1,0 +1,13 @@
+<?php $_shouldextend['59248081aea9d']=1; ?>
+<?php $this->startSection('css'); ?>
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('title',$title); ?>
+<?php $this->startSection('content'); ?>
+
+<?php $this->stopSection(); ?>
+<?php $this->startSection('js'); ?>
+
+<?php $this->stopSection(); ?>
+
+<?php if (@$_shouldextend['59248081aea9d']) { echo $this->runChild('_shared.master'); } ?>
