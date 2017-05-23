@@ -1,9 +1,9 @@
 {
     "name": "eftec/gentelella-bladeone",
-    "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+    "description": "Gentelella Admin Design for BladeOne Template System (PHP)",
     "type": "library",
     "keywords": ["blade","template","view"],
-    "homepage": "https://github.com/EFTEC/BladeOne",
+    "homepage": "https://github.com/EFTEC/gentelella-bladeone",
     "minimum-stability": "beta",
     "license": "MIT",
     "require": {
