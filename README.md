@@ -1,6 +1,8 @@
 # gentelella-bladeone
 A bootstrap 3 admin using bladeone template (php).
 
+Unlikely other products, it only requires a single file BladeOne.php to runs. So it could runs in vanilla php without any framework.
+
 
 
 
@@ -65,10 +67,10 @@ where **home.index** is the index template located in the folder **\views\home**
 |---------|--------|
 | index.blade.php | 0.1 OK|
 | calendar.blade.php | 0.1 OK  |
-| chartjs.blade.php | 0.1 NOT TESTED|
-| chartjs2.blade.php | 0.1 NOT TESTED|
-| contacts.blade.php | 0.1 NOT TESTED|
-| echarts.blade.php | 0.1 NOT TESTED|
+| chartjs.blade.php | 0.1 OK|
+| chartjs2.blade.php | 0.1 OK|
+| contacts.blade.php | 0.1 OK|
+| echarts.blade.php | 0.1 OK|
 | e_commerce.blade.php | 0.1 NOT TESTED|
 | fixed_footer.blade.php | 0.1 NOT TESTED|
 | fixed_sidebar.blade.php | 0.1 NOT TESTED|

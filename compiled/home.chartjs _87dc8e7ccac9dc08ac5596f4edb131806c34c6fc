@@ -1,4 +1,4 @@
-<?php $_shouldextend['592481df6b81a']=1; ?>
+<?php $_shouldextend['5924ad9933003']=1; ?>
 <?php $this->startSection('css'); ?>
 
 <?php $this->stopSection(); ?>
@@ -201,4 +201,4 @@
     <script src="vendors/Chart.js/dist/Chart.min.js"></script>
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['592481df6b81a']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5924ad9933003']) { echo $this->runChild('_shared.master'); } ?>

@@ -1,6 +1,15 @@
 @extends('_shared.master')
 @section('css')
+  <!-- bootstrap-daterangepicker -->
+  <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <!-- Ion.RangeSlider -->
+  <link href="vendors/normalize-css/normalize.css" rel="stylesheet">
+  <link href="vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+  <link href="vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+  <!-- Bootstrap Colorpicker -->
+  <link href="vendors/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 
+  <link href="vendors/cropper/dist/cropper.min.css" rel="stylesheet">
 @endsection
 @section('title',$title)
 @section('content')
@@ -921,5 +930,20 @@
 
 @endsection
 @section('js')
+  <!-- NProgress -->
+  <script src="vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="vendors/moment/min/moment.min.js"></script>
+  <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- Ion.RangeSlider -->
+  <script src="vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+  <!-- Bootstrap Colorpicker -->
+  <script src="vendors/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <!-- jquery.inputmask -->
+  <script src="vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+  <!-- jQuery Knob -->
+  <script src="vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+  <!-- Cropper -->
+  <script src="vendors/cropper/dist/cropper.min.js"></script>
 
 @endsection

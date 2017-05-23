@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- Dropzone.js -->
+  <link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)
@@ -66,5 +68,7 @@
 
 @endsection
 @section('js')
+  <!-- Dropzone.js -->
+  <script src="vendors/dropzone/dist/min/dropzone.min.js"></script>
 
 @endsection

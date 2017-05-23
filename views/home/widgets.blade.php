@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- bootstrap-progressbar -->
+  <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)
@@ -620,5 +622,13 @@
 
 @endsection
 @section('js')
+  <!-- Chart.js -->
+  <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+  <!-- jQuery Sparklines -->
+  <script src="vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <!-- easy-pie-chart -->
+  <script src="vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 
 @endsection

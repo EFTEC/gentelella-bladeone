@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+    <!-- jQuery custom content scroller -->
+    <link href="vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
 
 @endsection
 @section('title',$title)
@@ -19,5 +21,7 @@
 
 @endsection
 @section('js')
+    <!-- jQuery custom content scroller -->
+    <script src="vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
 @endsection

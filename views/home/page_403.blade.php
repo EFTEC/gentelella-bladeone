@@ -1,4 +1,4 @@
-@extends('_shared.master')
+@extends('_shared.masterfull')
 @section('css')
 
 @endsection
