@@ -12,6 +12,13 @@ A bootstrap 3 admin using bladeone template (php).
 ``` 
 composer require EFTEC/gentelella-bladeone
 ```
+# Install plain PHP
+_All the references and resources are included in this project._
+``` 
+Just download the folder to a web server and run /index.php
+```
+
+
 
 # How it works: 
 
