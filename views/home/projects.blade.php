@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)
@@ -401,5 +403,7 @@
 
 @endsection
 @section('js')
+  <!-- bootstrap-progressbar -->
+  <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 
 @endsection

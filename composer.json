@@ -1,12 +1,20 @@
 {
     "name": "eftec/gentelella-bladeone",
     "description": "Gentelella Admin Design for BladeOne Template System (PHP)",
-    "type": "library",
-    "keywords": ["blade","template","view"],
+    "version": "1.0",
+    "type": "example",
+    "keywords": ["blade","template","view","php"],
     "homepage": "https://github.com/EFTEC/gentelella-bladeone",
+    "authors": [
+        {
+            "name": "Jorge Castro Castillo",
+            "homepage": "https://github.com/EFTEC/"
+        }
+    ],
     "minimum-stability": "beta",
     "license": "MIT",
     "require": {
+        "composer/installers": "^1.0.20",
         "eftec/bladeone": "^1.8"
     }
 }

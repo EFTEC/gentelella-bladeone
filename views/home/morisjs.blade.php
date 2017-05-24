@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)
@@ -209,5 +211,8 @@
 
 @endsection
 @section('js')
+  <!-- morris.js -->
+  <script src="vendors/raphael/raphael.min.js"></script>
+  <script src="vendors/morris.js/morris.min.js"></script>
 
 @endsection

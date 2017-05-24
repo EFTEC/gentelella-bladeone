@@ -40,14 +40,14 @@ where **home.index** is the index template located in the folder **\views\home**
 
 
 # folders
-* **\\** = Controllers files.  They simply call the view.  
-* **\views** = The templates based in gentelella  
+* **\\** = Controllers files.  They simply use Bladeone and reder the views.  
+* **\views** = The templates based in gentelella. The templates are compatible with Laravel's Blade  
 * **\images** = images used by the views.   
-* **\js** = javascript used.   
-* **\css** = stylesheet used   
-* **\vendor** = php libraries (BladeOne)
-* **\vendors** = javascript libraries   
-* **\compiled** = a folder when the compiled \views are created.   
+* **\js** = Custom javascript.   
+* **\css** = Custom stylesheet   
+* **\vendor** = third party php libraries (BladeOne)
+* **\vendors** = third party javascript libraries   
+* **\compiled** = a folder when the compiled \views are created. It auto generates.   
 
 
 
@@ -102,36 +102,37 @@ Google analytics is used for the heroku demo.
 | chartjs2.blade.php | 0.1 OK|
 | contacts.blade.php | 0.1 OK|
 | echarts.blade.php | 0.1 OK|
-| e_commerce.blade.php | 0.1 NOT TESTED|
-| fixed_footer.blade.php | 0.1 NOT TESTED|
-| fixed_sidebar.blade.php | 0.1 NOT TESTED|
-| form.blade.php | 0.1 NOT TESTED|
-| form_advanced.blade.php | 0.1 NOT TESTED|
-| form_buttons.blade.php | 0.1 NOT TESTED|
-| form_upload.blade.php | 0.1 NOT TESTED|
-| form_validation.blade.php | 0.1 NOT TESTED|
-| form_wizards.blade.php | 0.1 NOT TESTED|
-| general_elements.blade.php | 0.1 NOT TESTED|
-| glyphicons.blade.php | 0.1 NOT TESTED|
-| icons.blade.php | 0.1 NOT TESTED|
-| inbox.blade.php | 0.1 NOT TESTED|
-| index2.blade.php | 0.1 NOT TESTED|
-| index3.blade.php | 0.1 NOT TESTED|
-| invoice.blade.php | 0.1 NOT TESTED|
-| level2.blade.php | 0.1 NOT TESTED|
-| login.blade.php | 0.1 NOT TESTED|
+| e_commerce.blade.php | 0.2 OK|
+| fixed_footer.blade.php | 0.2 OK|
+| fixed_sidebar.blade.php | 0.2 OK|
+| form.blade.php | 0.1 OK|
+| form_advanced.blade.php | 0.1 OK|
+| form_buttons.blade.php | 0.1 OK|
+| form_upload.blade.php | 0.1 OK|
+| form_validation.blade.php | 0.2 OK|
+| form_wizards.blade.php | 0.2 OK|
+| general_elements.blade.php | 0.2 OK|
+| glyphicons.blade.php | 0.2 OK|
+| icons.blade.php | 0.2 OK|
+| inbox.blade.php | 0.2 OK|
+| index.blade.php | 0.1 OK|
+| index2.blade.php | 0.2 OK|
+| index3.blade.php | 0.2 OK|
+| invoice.blade.php | 0.2 OK|
+| level2.blade.php | 0.2 OK|
+| login.blade.php | 0.2 OK|
 | map.blade.php | 0.1 NOT TESTED|
-| media_gallery.blade.php | 0.1 NOT TESTED|
-| morisjs.blade.php | 0.1 NOT TESTED|
-| other_charts.blade.php | 0.1 NOT TESTED|
-| page_403.blade.php | 0.1 NOT TESTED|
-| page_404.blade.php | 0.1 NOT TESTED|
-| page_500.blade.php | 0.1 NOT TESTED|
-| plain_page.blade.php | 0.1 NOT TESTED|
-| pricing_tables.blade.php | 0.1 NOT TESTED|
-| profile.blade.php | 0.1 NOT TESTED|
-| projects.blade.php | 0.1 NOT TESTED|
-| project_detail.blade.php | 0.1 NOT TESTED|
+| media_gallery.blade.php | 0.2 OK|
+| morisjs.blade.php | 0.2 OK|
+| other_charts.blade.php | 0.2 OK|
+| page_403.blade.php | 0.1 OK|
+| page_404.blade.php | 0.1 OK|
+| page_500.blade.php | 0.1 OK|
+| plain_page.blade.php | 0.1 OK|
+| pricing_tables.blade.php | 0.1 OK|
+| profile.blade.php | 0.2 OK|
+| projects.blade.php | 0.2 OK|
+| project_detail.blade.php | 0.2 OK|
 | tables.blade.php | 0.1 NOT TESTED|
 | tables_dynamic.blade.php | 0.2 OK|
 | typography.blade.php | 0.2 OK|
@@ -143,9 +144,9 @@ Google analytics is used for the heroku demo.
 
 BladeOne is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that Jorge Castro Castillo is the original author of this library.
 
-Gentelella copyright Colorlib. Licensed under The MIT License (MIT).   
+Gentelella copyright Colorlib (https://colorlib.com/). Licensed under The MIT License (MIT).   
 
-Animate copyright Daniel Eden. Licensed under The MIT License (MIT).   
+Animate copyright Daniel Eden (https://daneden.github.io). Licensed under The MIT License (MIT).   
 
 Autosize copyright Jack Moore. Licensed under The MIT License (MIT).   
 

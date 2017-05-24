@@ -1,5 +1,9 @@
 @extends('_shared.master')
 @section('css')
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- JQVMap -->
+  <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
 
 @endsection
 @section('title',$title)
@@ -164,5 +168,14 @@
 
 @endsection
 @section('js')
+  <!-- jQuery Sparklines -->
+  <script src="vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <!-- JQVMap -->
+  <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+  <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="vendors/jqvmap/dist/maps/jquery.vmap.usa.js"></script>
+  <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+  <!-- easy-pie-chart -->
+  <script src="vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
 
 @endsection

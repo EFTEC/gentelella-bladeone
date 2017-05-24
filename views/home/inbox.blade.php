@@ -1,6 +1,7 @@
 @extends('_shared.master')
 @section('css')
-
+  <!-- bootstrap-wysiwyg -->
+  <link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
 @endsection
 @section('title',$title)
 @section('content')
@@ -261,5 +262,8 @@
 
 @endsection
 @section('js')
-
+  <!-- bootstrap-wysiwyg -->
+  <script src="vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+  <script src="vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+  <script src="vendors/google-code-prettify/src/prettify.js"></script>
 @endsection

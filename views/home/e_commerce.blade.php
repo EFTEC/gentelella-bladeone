@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)

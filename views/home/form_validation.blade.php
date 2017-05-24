@@ -142,5 +142,7 @@
 
 @endsection
 @section('js')
+  <!-- validator -->
+  <script src="vendors/validator/validator.js"></script>
 
 @endsection

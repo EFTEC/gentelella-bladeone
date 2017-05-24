@@ -1,4 +1,4 @@
-<?php $_shouldextend['59248ca20ee48']=1; ?>
+<?php $_shouldextend['5925a1a1a3c55']=1; ?>
 <?php $this->startSection('css'); ?>
     <!-- iCheck -->
     <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
@@ -736,4 +736,4 @@
     <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['59248ca20ee48']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925a1a1a3c55']) { echo $this->runChild('_shared.master'); } ?>

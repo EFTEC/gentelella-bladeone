@@ -1,5 +1,7 @@
-<?php $_shouldextend['59258d04cb53b']=1; ?>
+<?php $_shouldextend['5925a6c036b3f']=1; ?>
 <?php $this->startSection('css'); ?>
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
 <?php $this->stopSection(); ?>
 <?php $this->startSection('title',$title); ?>
@@ -401,7 +403,9 @@
 
 <?php $this->stopSection(); ?>
 <?php $this->startSection('js'); ?>
+  <!-- bootstrap-progressbar -->
+  <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['59258d04cb53b']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925a6c036b3f']) { echo $this->runChild('_shared.master'); } ?>

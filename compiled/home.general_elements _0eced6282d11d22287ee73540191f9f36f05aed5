@@ -1,4 +1,4 @@
-<?php $_shouldextend['5924884785a84']=1; ?>
+<?php $_shouldextend['592596805bba6']=1; ?>
 <?php $this->startSection('css'); ?>
   <!-- iCheck -->
   <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
@@ -1369,4 +1369,4 @@
   <script src="vendors/pnotify/dist/pnotify.nonblock.js"></script>
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['5924884785a84']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['592596805bba6']) { echo $this->runChild('_shared.master'); } ?>

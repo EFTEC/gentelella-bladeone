@@ -1,4 +1,4 @@
-<?php $_shouldextend['5924aea78279f']=1; ?>
+<?php $_shouldextend['5925937d99881']=1; ?>
 <?php $this->startSection('css'); ?>
     <!-- jQuery custom content scroller -->
     <link href="vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
@@ -26,4 +26,4 @@
 
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['5924aea78279f']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925937d99881']) { echo $this->runChild('_shared.master'); } ?>

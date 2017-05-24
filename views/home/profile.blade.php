@@ -1,6 +1,7 @@
 @extends('_shared.master')
 @section('css')
-
+  <!-- bootstrap-daterangepicker -->
+  <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 @endsection
 @section('title',$title)
 @section('content')
@@ -287,5 +288,13 @@
 
 @endsection
 @section('js')
+  <!-- morris.js -->
+  <script src="vendors/raphael/raphael.min.js"></script>
+  <script src="vendors/morris.js/morris.min.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="vendors/moment/min/moment.min.js"></script>
+  <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 @endsection

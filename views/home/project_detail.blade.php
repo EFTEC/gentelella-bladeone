@@ -1,5 +1,7 @@
 @extends('_shared.master')
 @section('css')
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
 @endsection
 @section('title',$title)
@@ -195,5 +197,7 @@
 
 @endsection
 @section('js')
+  <!-- ECharts -->
+  <script src="vendors/echarts/dist/echarts.min.js"></script>
 
 @endsection
