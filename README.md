@@ -41,6 +41,7 @@ where **home.index** is the index template located in the folder **\views\home**
 
 
 # folders
+* **\\** = Controllers files.  They simply call the view.  
 * **\views** = The templates based in gentelella  
 * **\images** = images used by the views.   
 * **\js** = javascript used.   
@@ -102,9 +103,9 @@ where **home.index** is the index template located in the folder **\views\home**
 | projects.blade.php | 0.1 NOT TESTED|
 | project_detail.blade.php | 0.1 NOT TESTED|
 | tables.blade.php | 0.1 NOT TESTED|
-| tables_dynamic.blade.php | 0.1 NOT TESTED|
-| typography.blade.php | 0.1 NOT TESTED|
-| widgets.blade.php | 0.1 NOT TESTED|
+| tables_dynamic.blade.php | 0.2 OK|
+| typography.blade.php | 0.2 OK|
+| widgets.blade.php | 0.2 OK|
 | xx.blade.php | 0.1 What is that? |
 
 ## License information
