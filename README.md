@@ -135,7 +135,7 @@ Google analytics is used for the heroku demo.
 | profile.blade.php | 0.2 OK|
 | projects.blade.php | 0.2 OK|
 | project_detail.blade.php | 0.2 OK|
-| tables.blade.php | 0.1 NOT TESTED|
+| tables.blade.php | 0.2 OK|
 | tables_dynamic.blade.php | 0.2 OK|
 | typography.blade.php | 0.2 OK|
 | widgets.blade.php | 0.2 OK|
