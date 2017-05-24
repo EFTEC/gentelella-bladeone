@@ -10,6 +10,7 @@ Unlikely other products, it only requires a single file BladeOne.php to runs. So
 
 **[Live template Running on heroku](https://gentella-bladeone.herokuapp.com/index.php)**
 
+
 # Install using composer
 ``` 
 composer require EFTEC/gentelella-bladeone
@@ -42,6 +43,15 @@ where **home.index** is the index template located in the folder **\views\home**
 # folders
 * **\\** = Controllers files.  They simply use Bladeone and reder the views.  
 * **\views** = The templates based in gentelella. The templates are compatible with Laravel's Blade  
+* **\views\\_shared** = The shared templates
+* **\views\\_shared\master.blade.php** = The master template. It has the common code used for many pages but the login and error pages.
+* **\views\\_shared\masterfull.blade.php** = Another master page that doesn't have the left and top menu
+* **\views\\_shared\header.php** = The header (upper menu)
+* **\views\\_shared\head.php** = The head \<head\> content
+* **\views\\_shared\leftmenu.php** = The left menu
+* **\views\\_shared\leftmenu.php** = The footer of the page (where is the copyright)
+* **\views\\_home** = The pages content
+
 * **\images** = images used by the views.   
 * **\js** = Custom javascript.   
 * **\css** = Custom stylesheet   
