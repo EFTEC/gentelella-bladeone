@@ -1,7 +1,18 @@
 # gentelella-bladeone
-A bootstrap 3 admin using bladeone template (php).
+A bootstrap 3 admin using bladeone template system (php).
 
-Unlikely other products, it only requires a single file BladeOne.php to runs. So it could runs in vanilla php without any framework.
+
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
+[![npm](https://img.shields.io/badge/npm-%3E4.1-blue.svg)]()
+[![php](https://img.shields.io/badge/php->5.4-green.svg)]()
+[![php](https://img.shields.io/badge/php-7.x-green.svg)]()
+[![CocoaPods](https://img.shields.io/badge/docs-20%25-yellow.svg)]()
+
+
+Unlikely other products, it only requires a single file BladeOne.php to runs. So it could runs in vanilla php without any framework or any other external references.
+  
+  
 
 
 
