@@ -1,4 +1,4 @@
-<?php $_shouldextend['5925a903a4af1']=1; ?>
+<?php $_shouldextend['5925dd5d4503a']=1; ?>
 <?php $this->startSection('css'); ?>
   <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 <?php $this->stopSection(); ?>
@@ -488,4 +488,4 @@
 
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['5925a903a4af1']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925dd5d4503a']) { echo $this->runChild('_shared.master'); } ?>

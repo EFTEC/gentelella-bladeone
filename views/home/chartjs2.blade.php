@@ -196,5 +196,5 @@
 @endsection
 @section('js')
     <!-- Chart.js -->
-    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="vendors/chart.js/dist/Chart.min.js"></script>
 @endsection

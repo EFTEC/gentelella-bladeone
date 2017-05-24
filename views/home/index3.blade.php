@@ -574,7 +574,7 @@
 @endsection
 @section('js')
   <!-- Chart.js -->
-  <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+  <script src="vendors/chart.js/dist/Chart.min.js"></script>
   <!-- jQuery Sparklines -->
   <script src="vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
   <!-- morris.js -->
@@ -587,17 +587,17 @@
   <!-- Skycons -->
   <script src="vendors/skycons/skycons.js"></script>
   <!-- Flot -->
-  <script src="vendors/Flot/jquery.flot.js"></script>
-  <script src="vendors/Flot/jquery.flot.pie.js"></script>
-  <script src="vendors/Flot/jquery.flot.time.js"></script>
-  <script src="vendors/Flot/jquery.flot.stack.js"></script>
-  <script src="vendors/Flot/jquery.flot.resize.js"></script>
+  <script src="vendors/flot/jquery.flot.js"></script>
+  <script src="vendors/flot/jquery.flot.pie.js"></script>
+  <script src="vendors/flot/jquery.flot.time.js"></script>
+  <script src="vendors/flot/jquery.flot.stack.js"></script>
+  <script src="vendors/flot/jquery.flot.resize.js"></script>
   <!-- Flot plugins -->
   <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
   <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
   <script src="vendors/flot.curvedlines/curvedLines.js"></script>
   <!-- DateJS -->
-  <script src="vendors/DateJS/build/date.js"></script>
+  <script src="vendors/datejs/build/date.js"></script>
   <!-- bootstrap-daterangepicker -->
   <script src="vendors/moment/min/moment.min.js"></script>
   <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
