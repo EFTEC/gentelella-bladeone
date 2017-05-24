@@ -87,9 +87,11 @@ Google analytics is used for the heroku demo.
 ```
 
 
-# Versions
+# Version
 
-0.1 first version (beta)
+* 0.1 - 2017-05-21 first version (beta)   
+* 0.2 - 2017-05-24 second version. 99% its up and running. SCSS fixes.      
+
 
 # Todo
 
