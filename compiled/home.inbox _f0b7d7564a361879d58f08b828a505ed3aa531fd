@@ -1,4 +1,4 @@
-<?php $_shouldextend['5925974356b0a']=1; ?>
+<?php $_shouldextend['5925a954a34d0']=1; ?>
 <?php $this->startSection('css'); ?>
   <!-- bootstrap-wysiwyg -->
   <link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
@@ -268,4 +268,4 @@
   <script src="vendors/google-code-prettify/src/prettify.js"></script>
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['5925974356b0a']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925a954a34d0']) { echo $this->runChild('_shared.master'); } ?>
