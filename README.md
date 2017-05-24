@@ -52,10 +52,19 @@ where **home.index** is the index template located in the folder **\views\home**
 
 
 
-# Dependencies
+# Dependencies PHP
 
-* It requires BladeOne (PHP) 1.8 or higher.
+* It requires BladeOne (PHP) 1.8 or higher.  Included in the project.
 * PHP 5.5 or higher.
+
+# Dependencies Javascript / Css 
+_(all included)_  
+
+* JQuery
+* Bootstrap
+* TODO: Others.
+
+
 
 # Versions
 
