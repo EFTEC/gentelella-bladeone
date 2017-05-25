@@ -1,4 +1,4 @@
-<?php $_shouldextend['5925a96f358f9']=1; ?>
+<?php $_shouldextend['5925fb5e5f879']=1; ?>
 <?php $this->startSection('css'); ?>
     <!-- iCheck -->
     <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
@@ -706,7 +706,7 @@
 <?php $this->startSection('js'); ?>
 
     <!-- Chart.js -->
-    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="vendors/chart.js/dist/Chart.min.js"></script>
     <!-- gauge.js -->
     <script src="vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
@@ -716,17 +716,17 @@
     <!-- Skycons -->
     <script src="vendors/skycons/skycons.js"></script>
     <!-- Flot -->
-    <script src="vendors/Flot/jquery.flot.js"></script>
-    <script src="vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="vendors/Flot/jquery.flot.time.js"></script>
-    <script src="vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.pie.js"></script>
+    <script src="vendors/flot/jquery.flot.time.js"></script>
+    <script src="vendors/flot/jquery.flot.stack.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
     <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
     <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
     <script src="vendors/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="vendors/DateJS/build/date.js"></script>
+    <script src="vendors/datejs/build/date.js"></script>
     <!-- JQVMap -->
     <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
     <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
@@ -736,4 +736,4 @@
     <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 <?php $this->stopSection(); ?>
 
-<?php if (@$_shouldextend['5925a96f358f9']) { echo $this->runChild('_shared.master'); } ?>
+<?php if (@$_shouldextend['5925fb5e5f879']) { echo $this->runChild('_shared.master'); } ?>
