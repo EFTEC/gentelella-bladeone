@@ -2723,16 +2723,16 @@ if (typeof NProgress != 'undefined') {
 				Morris.Line({
 				  element: 'graph_line',
 				  xkey: 'year',
-				  ykeys: ['value'],
-				  labels: ['Value'],
+				  ykeys: ['value','value2'],
+				  labels: ['Value','Value2'],
 				  hideHover: 'auto',
 				  lineColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
 				  data: [
-					{year: '2012', value: 20},
-					{year: '2013', value: 10},
-					{year: '2014', value: 5},
-					{year: '2015', value: 5},
-					{year: '2016', value: 20}
+					{year: '2012', value: 20, value2: 20},
+					{year: '2013', value: 10, value2: 20},
+					{year: '2014', value: 5, value2: 20},
+					{year: '2015', value: 5, value2: 20},
+					{year: '2016', value: 20, value2: 20}
 				  ],
 				  resize: true
 				});

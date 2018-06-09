@@ -8,6 +8,8 @@
 @section('title',$title)
 @section('content')
 
+
+
         <div class="right_col" role="main">
           <div class="">
             <div class="row top_tiles" style="margin: 10px 0;">
@@ -568,8 +570,80 @@
             </div>
           </div>
         </div>
-        
 
+        <input type="button" onclick="refresh()" value="refresh" />
+        <script>
+
+
+          var datachart1=[]; //[0,0],[1,0]];
+          var datachart2=[]; //[0,0],[1,0]];
+          for(var i=0;i<20;i++) {
+              datachart1[i]=[i,0]; //   array.splice(index, 1);
+              datachart2[i]=[i,5]; //   array.splice(index, 1);
+          }
+          /*
+          var datachart=[  {
+              label: "Sales1",
+              data: datachart1
+              },
+              {
+              label: "Sales2",
+              data: datachart2
+              }]; //[0,0],[1,0]];
+            */
+          var datachart = [
+              {
+                  label: "Sell out",
+                  data: datachart1,
+                  color: "#FF0000",
+                  points: { fillColor: "#FF0000", show: true },
+                  lines: { show: true }
+              },
+              {
+                  label: "Buy in",
+                  data: datachart2,
+                  xaxis:2,
+                  color: "#0062E3",
+                  points: { fillColor: "#0062E3", show: true },
+                  lines: { show: true }
+              }
+          ];
+
+
+          var contadorchart=1;
+
+            function refresh() {
+                contadorchart++;
+                //datachart.splice(0, 1);
+                /*
+                for(var i=0;i<20-1;i++) {
+                    datachart[i] = datachart[i + 1];
+                    datachart[i][0]=i;
+                }
+
+                datachart[19]=([19,contadorchart]);
+                console.log(datachart.length);//=[contadorchart,contadorchart];
+                */
+
+                //datachart[contadorchart]=[contadorchart,contadorchart];
+
+
+                console.log('Plot1');
+
+
+
+                $.plot($("#chart_plot_03"), [{
+                    data: datachart1,
+                    lines: { show: true, fill: true }
+                }, {
+                    data: datachart2,
+                    lines: { show: true },
+                    points: { show: true }
+                }]);
+
+
+            }
+        </script>
 
 @endsection
 @section('js')

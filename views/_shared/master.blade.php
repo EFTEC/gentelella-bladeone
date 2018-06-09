@@ -31,7 +31,7 @@
 @section("js")
 @show()
 <!-- Custom Theme Scripts -->
-<script src="js/custom.min.js"></script>
+<script src="js/custom.js"></script>
 
 <!-- google analytics, please remove it -->
 <script>
