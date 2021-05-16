@@ -485,7 +485,7 @@ class BladeOne
      *
      * @param bool $bool
      * @return BladeOne
-     * @see \eftec\bladeone\BladeOne::setMode
+     * @see \eftec\BladeOne\BladeOne::setMode
      */
     public function setIsCompiled($bool = false)
     {
@@ -654,10 +654,10 @@ class BladeOne
      *
      * @return string
      *
-     * @see \eftec\bladeone\BladeOne::compileStatements
-     * @see \eftec\bladeone\BladeOne::compileExtends
-     * @see \eftec\bladeone\BladeOne::compileComments
-     * @see \eftec\bladeone\BladeOne::compileEchos
+     * @see \eftec\BladeOne\BladeOne::compileStatements
+     * @see \eftec\BladeOne\BladeOne::compileExtends
+     * @see \eftec\BladeOne\BladeOne::compileComments
+     * @see \eftec\BladeOne\BladeOne::compileEchos
      */
     protected function parseToken($token)
     {
@@ -1673,7 +1673,7 @@ class BladeOne
      * @param string|array $varname It is the name of the variable or it is an associative array
      * @param mixed        $value
      * @return $this
-     * @see \eftec\bladeone\BladeOne::share
+     * @see \eftec\BladeOne\BladeOne::share
      */
     public function with($varname, $value = null)
     {
@@ -2285,7 +2285,7 @@ class BladeOne
      * <b>Note:</b>The relative path is calculated when we set the base url.
      *
      * @return string
-     * @see \eftec\bladeone\BladeOne::setBaseUrl
+     * @see \eftec\BladeOne\BladeOne::setBaseUrl
      */
     public function getRelativePath()
     {
@@ -2524,7 +2524,7 @@ class BladeOne
     /**
      * @param $expression
      * @return string
-     * @see \eftec\bladeone\BladeOne::getCanonicalUrl
+     * @see \eftec\BladeOne\BladeOne::getCanonicalUrl
      */
     public function compileCanonical($expression = null)
     {
@@ -2535,7 +2535,7 @@ class BladeOne
     /**
      * @param $expression
      * @return string
-     * @see \eftec\bladeone\BladeOne::getBaseUrl()
+     * @see \eftec\BladeOne\BladeOne::getBaseUrl()
      */
     public function compileBase($expression = null)
     {
@@ -2841,7 +2841,7 @@ class BladeOne
      * @param string $text
      *
      * @return string
-     * @see \eftec\bladeone\BladeOne::$aliasClasses
+     * @see \eftec\BladeOne\BladeOne::$aliasClasses
      */
     private function fixNamespaceClass($text)
     {
@@ -3015,7 +3015,7 @@ class BladeOne
      *
      * @param string $result
      * @return string
-     * @\eftec\bladeone\BladeOne::$pipeEnable
+     * @\eftec\BladeOne\BladeOne::$pipeEnable
      */
     protected function pipeDream($result)
     {

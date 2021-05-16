@@ -6,8 +6,8 @@ This library adds cache to the visual layer and business/logic layer.
 For using this library, the code requires to include and use the trait BladeOneCache
 
 ```php
-class MyBlade extends  bladeone\BladeOne {
-    use bladeone\BladeOneCache;
+class MyBlade extends  BladeOne\BladeOne {
+    use BladeOne\BladeOneCache;
 }
 $blade=new MyBlade($views,$compiledFolder);
 ```

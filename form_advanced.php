@@ -1,7 +1,7 @@
 <?php
 // Copyright (c) Jorge Castro Castillo.  All rights reserved. MIT License
 
-use eftec\bladeone\BladeOne;
+use eftec\BladeOne\BladeOne;
 
 include "vendor/autoload.php";
 

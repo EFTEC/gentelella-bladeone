@@ -3,7 +3,7 @@
 
 include "vendor/autoload.php";
 use eftec\bladeone;
-$blade=new bladeone\BladeOne(__DIR__.'/views',__DIR__ . '/compiled');
+$blade=new BladeOne\BladeOne(__DIR__.'/views',__DIR__ . '/compiled');
 define("BLADEONE_MODE",1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
 
 $values=['title'=>'Gentelella-bladeone | form_wizards.blade.php ','username'=>'Hillary Trump'];

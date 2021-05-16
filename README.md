@@ -40,7 +40,7 @@ Just download the folder to a web server and run /index.php
 include "vendor/autoload.php";
 use eftec\bladeone;
 
-$blade=new bladeone\BladeOne(__DIR__.'/views',__DIR__ . '/compiled');
+$blade=new BladeOne\BladeOne(__DIR__.'/views',__DIR__ . '/compiled');
 define("BLADEONE_MODE",1);
 
 $values=['title'=>'Gentelella-bladeone | index ','username'=>'Hillary Trump'];

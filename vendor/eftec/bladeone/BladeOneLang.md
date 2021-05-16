@@ -7,8 +7,8 @@ For using this library, the code requires to include and use the trait BladeOneC
 
 Setting:
 ```php
-class MyBlade extends  bladeone\BladeOne {
-    use bladeone\BladeOneLang;
+class MyBlade extends  BladeOne\BladeOne {
+    use BladeOne\BladeOneLang;
 }
 $blade=new MyBlade($views,$compiledFolder);
 
@@ -23,7 +23,7 @@ Where /lang/es.php is simmilar to:
 ```php 
 <?php
 
-use eftec\bladeone\BladeOneLang;
+use eftec\BladeOne\BladeOneLang;
 
 BladeOneLang::$dictionary=array(
     'Hat'=>'Sombrero'

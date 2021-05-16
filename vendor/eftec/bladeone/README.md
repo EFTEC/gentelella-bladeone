@@ -231,7 +231,7 @@ If you don't use it, then you could download the library and include it manually
 ### Implicit definition
 
 ```php
-use eftec\bladeone\BladeOne;
+use eftec\BladeOne\BladeOne;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
@@ -255,7 +255,7 @@ views/hello.blade.php:
 In this mode, it uses the folders ```__DIR__/views``` and ```__DIR__/compiles```, also it uses the mode as MODE_AUTO.
 
 ```php
-use eftec\bladeone\BladeOne;
+use eftec\BladeOne\BladeOne;
 
 $blade = new BladeOne(); // MODE_DEBUG allows to pinpoint troubles.
 echo $blade->run("hello",array("variable1"=>"value1")); // it calls /views/hello.blade.php
@@ -264,7 +264,7 @@ echo $blade->run("hello",array("variable1"=>"value1")); // it calls /views/hello
 ### Fluent
 
 ```php
-use eftec\bladeone\BladeOne;
+use eftec\BladeOne\BladeOne;
 
 $blade = new BladeOne(); // MODE_DEBUG allows to pinpoint troubles.
 echo $blade->setView('hello')    // it sets the view to render
@@ -317,7 +317,7 @@ Use eftec\bladeone;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
-$blade=new bladeone\BladeOne($views,$cache,BladeOne::MODE_AUTO);
+$blade=new BladeOne\BladeOne($views,$cache,BladeOne::MODE_AUTO);
 
 $blade->setAuth('johndoe','admin'); // where johndoe is an user and admin is the role. The role is optional
 
