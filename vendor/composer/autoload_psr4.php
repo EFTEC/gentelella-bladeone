@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'eftec\\' => array($vendorDir . '/eftec/bladeone/vendor/eftec'),
+    'eftec\\bladeone\\' => array($vendorDir . '/eftec/bladeone/lib'),
+    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
 );

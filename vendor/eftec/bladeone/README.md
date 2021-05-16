@@ -1,72 +1,154 @@
-![Logo](https://github.com/EFTEC/BladeOne/blob/gh-pages/images/bladelogo.png)
+![Logo](https://raw.githubusercontent.com/EFTEC/BladeOne/gh-pages/images/bladelogo.png)
 
-# BladeOne
-BladeOne is a standalone version of Blade Template Engine that uses a single php file and can be ported and used in different projects.
+# BladeOne Blade Template Engine
+BladeOne is a standalone version of Blade Template Engine that uses a single PHP file and can be ported and used in different projects. It allows you to use blade template outside Laravel.
 
-# Introduction (From Laravel webpage)
-Blade is the simple, yet powerful templating engine provided with Laravel. Unlike other popular PHP templating engines, Blade does not restrict you from using plain PHP code in your views. All Blade views are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your application. Blade view files use the .blade.php file extension and are typically stored in the resources/views directory.
+Бладеоне-это отдельная версия ядра Blade-шаблонов, которая использует один PHP-файл и может быть портирована и использована в различных проектах. Он позволяет использовать шаблон Blade за пределами laravel.    
 
-# About this version
-By standard, Blade is part of Laravel (Illuminate components) and for to use it, you requires to install Laravel and Illuminate-view components.
-Blade as a template engine is pretty nice and clear. Also it generates a (some that) clean code. And its starting to be considered a de-facto template system for php (Smarty has been riding off the sunset since years ago). So, if we are able to use it without Laravel then its a big plus for many projects. In fact, in theory its is even possible to use with Laravel.
-Exists different version of Blade Template that runs without Laravel but most requires 50 or more files and those templates add a new level of complexity:
 
-- More files to manages.
+[![Packagist](https://img.shields.io/packagist/v/eftec/bladeone.svg)](https://packagist.org/packages/eftec/bladeone)
+[![Total Downloads](https://poser.pugx.org/eftec/bladeone/downloads)](https://packagist.org/packages/eftec/bladeone)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021.svg)]()
+[![composer](https://img.shields.io/badge/composer-%3E1.6-blue.svg)]()
+[![php](https://img.shields.io/badge/php->5.6-green.svg)]()
+[![php](https://img.shields.io/badge/php-7.x-green.svg)]()
+[![php](https://img.shields.io/badge/php-8.x-green.svg)]()
+[![CocoaPods](https://img.shields.io/badge/docs-70%25-yellow.svg)]()
+
+
+NOTE: So far it's apparently the only one project that it's updated with the latest version of **Blade 7 (March 2020)**. It misses some commands [missing](#missing) but nothing more.
+
+
+Примечание: до сих пор это, видимо, только один проект, который обновляется с последней версией ** Blade 7 (2020 Марта) **. Он пропускает некоторые команды [отсутствует](#missing), но ничего больше.
+
+## Comparison with Twig
+
+> (spoiler) Twig is slower. 😊         
+
+|          | First Time Time | First Time Memory | Overload First Time | Second Time | Second Time Memory |
+|----------|-----------------|-------------------|---------------------|-------------|--------------------|
+| BladeOne | 1962ms          | 2024kb            | 263                 | 1917ms      | 2024kb             |
+| Twig     | 3734ms          | 2564kb            | 123                 | 3604ms      | 2327kb             |
+
+What it was tested?.  It was tested two features (that are the most used):   It was tested with an array with 
+1000 elements and tested many times.
+
+[Comparison with Twig](https://github.com/EFTEC/BladeOne/wiki/Comparison-with-Twig)
+
+
+
+## NOTE about questions, reports, doubts or suggesting:
+
+✔ If you want to open an inquiry, do you have a doubt, or you find a bug, then you could open an [ISSUE](https://github.com/EFTEC/BladeOne/issues).   
+Please, don't email me (or send me PM) directly for question or reports.    
+Also, if you want to reopen a report, then you are open to do that.     
+I will try to answer all and every one of the question (in my limited time).    
+
+## Some example
+| [ExampleTicketPHP](https://github.com/jorgecc/ExampleTicketPHP) | [Example cupcakes](https://github.com/EFTEC/example.cupcakes) | [Example Search](https://github.com/EFTEC/example-search)    | [Example Editable Grid](https://github.com/EFTEC/example-php-editablegrid) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://camo.githubusercontent.com/3c938f71f46a90eb85bb104f0f396fcba62b8f4a/68747470733a2f2f74686570726163746963616c6465762e73332e616d617a6f6e6177732e636f6d2f692f3436696b7061376661717677726533797537706a2e6a7067" alt="example php bladeone" width="200"/> | <img src="https://github.com/EFTEC/example.cupcakes/raw/master/docs/result.jpg" alt="example php bladeone cupcakes" width="200"/> | <img src="https://github.com/EFTEC/example-search/raw/master/img/search_bootstrap.jpg" alt="example php bladeone search" width="200"/> | <img src="https://github.com/EFTEC/example-php-editablegrid/raw/master/docs/final.jpg" alt="example php bladeone search" width="200"/> |
+
+[https://www.southprojects.com](https://www.southprojects.com)
+
+
+## Manual
+
+* [BladeOne Manual](https://github.com/EFTEC/BladeOne/wiki/BladeOne-Manual)    
+* [Template tags (views)](https://github.com/EFTEC/BladeOne/wiki/Template-tags)    
+    * [Template variables](https://github.com/EFTEC/BladeOne/wiki/Template-variables)     
+    * [Template inheritance](https://github.com/EFTEC/BladeOne/wiki/Template-inheritance)  
+    * [Template component](https://github.com/EFTEC/BladeOne/wiki/Template-Component)            
+    * [Template stack](https://github.com/EFTEC/BladeOne/wiki/Template-stack)
+    * [Template asset, relative, base, current and canonical links](https://github.com/EFTEC/BladeOne/wiki/Template-Asset,-Relative,-Base-and-Canonical-Links)
+    * [Template calling methods](https://github.com/EFTEC/BladeOne/wiki/Template-calling-methods) 
+    * [Template logic](https://github.com/EFTEC/BladeOne/wiki/Template-logic)    
+    * [Template loop](https://github.com/EFTEC/BladeOne/wiki/Template-loop)    
+    * [Template Pipes (Filter)](https://github.com/EFTEC/BladeOne/wiki/Template-Pipes-(Filter))    
+* [Methods of the class](https://github.com/EFTEC/BladeOne/wiki/Methods-of-the-class)   
+* [Injecting logic before the view (composer)](https://github.com/EFTEC/BladeOne/wiki/Injecting-logic-before-the-view-(composer))
+* [Extending the class](https://github.com/EFTEC/BladeOne/wiki/Extending-the-class)   
+* [Using BladeOne with YAF Yet Another Framework](https://github.com/EFTEC/BladeOne/wiki/Using--BladeOne-with-YAF)
+* [Differences between Blade and BladeOne](https://github.com/EFTEC/BladeOne/wiki/Differences-between-Blade-and-BladeOne)   
+* [Comparision with Twig (May-2020)](https://github.com/EFTEC/BladeOne/wiki/Comparison-with-Twig)
+* [Changelog](https://github.com/EFTEC/BladeOne/wiki/Changelog)   
+* [Changes between 2.x and 3.0 and TODO](https://github.com/EFTEC/BladeOne/wiki/Changes-between-2.x-and-3.0-and-TODO)   
+* [Code Protection (Sourceguardian and similars)](https://github.com/EFTEC/BladeOne/wiki/Code-Protection-(Sourceguardian-and-similars))   
+
+## Why does it support PHP 5.x?
+
+As for today (January 2021), PHP 5.x is still strong even when it is discontinued, but my main problem is the performance.
+
+* PHP 7.x 60.2%
+* PHP 5.x 39.5%
+* PHP 8.x 00.1%
+
+* PHP 7.0 brings some new features and definitions. One is the use of type-hinting. While it could be useful, but it affects the performance
+so there is not reason to use it for this library (we use PHPDOC and it doesn't affect the performance).   
+* PHP 7.0 adds some new features such as is_countable(). However, it is slower than the method used here. 
+* We could also use Null Coalescing Operator, but it is not slower or faster than a ternary operator. 
+* PHP 8.0 also adds str_contains(), but it doesn't bring a sustancial performance but syntax sugar. 
+
+
+## Laravel blade tutorial
+
+You can find some tutorials and example on the folder [Examples](examples).
+
+You could also check the wiki [Wiki](https://github.com/EFTEC/BladeOne/wiki)
+
+## About this version
+By standard, The original Blade library is part of Laravel (Illuminate components) and to use this template library, you require install Laravel and Illuminate-view components.
+The syntax of Blade is pretty nice and bright. It's based in C# Razor (another template library for C#). It's starting to be considered a de-facto standard template system for many PHP (Smarty has been riding off the sunset since years ago) so, if we can use it without Laravel then its a big plus for many projects. 
+In fact, in theory, it is even possible to use with Laravel.
+Exists different versions of Blade Template that runs without Laravel, but most requires 50 or more files, and those templates add a new level of complexity, so they are not removing Laravel but hiding:
+
+- More files to manage.
 - Changes to the current project (if you want to integrate the template into an existent one)
 - Incompatibilities amongst other projects.
 - Slowness (if your server is not using op-cache)
 - Most of the code in the original Blade is used for future use, including the chance to use a different template engine.
 - Some Laravel legacy code.
 
-This project uses a single file called BladeOne.php and a single class (called BladeOne). If you want to use it then include it, creates the folders and that's it!. Nothing more (not even namespaces)*[]: 
+This project uses a single file called BladeOne.php and a single class (called BladeOne). 
+If you want to use it then include it, creates the folders and that's it!. Nothing more (not even namespaces)*[]:  It is also possible to use Blade even with Laravel or any other framework. After all, BladeOne is native, so it's possible to integrate into almost any project.
 
-# Why to use it instead of native PHP?
+## Why to use it instead of native PHP?
 
-## Separation of concerns
+### Separation of concerns
 Let’s say that we have the next code
 
 ```php
-<?php
-//some php code
-// some html code
-// more php code
-// more html code.
-?>
+//some PHP code
+// some HTML code
+// more PHP code
+// more HTML code.
 ```
 It leads to a mess of a code.  For example, let’s say that we oversee changing the visual layout of the page. In this case, we should change all the code and we could even break part of the programming.   
 Instead, using a template system works in the next way:
 ```php
-<?php
 // some php code
 ShowTemplate();
-?>
 ```
 We are separating the visual layer from the code layer.  As a plus, we could assign a non-php-programmer in charge to edit the template, and he/she doesn’t need to touch or know our php code.
 ## Security
 Let’s say that we have the next exercise (it’s a dummy example)
 ```php
-<?php
-$name=@$_GET[‘name’];
-Echo “my name is “.$name;
-?>
+$name=@$_GET['name'];
+echo "my name is ".$name;
 ```
 It could be separates as two files:
-```php
-<?php // index.php
-$name=@$_GET[‘name’];
-Include “template.php”
-?>
+```php // index.php
+$name=@$_GET['name'];
+include "template.php";
 ```
 ```php 
-<?php // template.php
-Echo “my name is “.$name;
-?>
+// template.php
+echo "my name is ".$name;
 ```
 Even for this simple example, there is a risk of hacking.   How?  A user could sends malicious code by using the GET variable, such as html or even javascript. The second file should be written as follow:
 ```php 
-<?php // template.php
-Echo “my name is “.html_entities($name);
-?>
+ // template.php
+echo "my name is ".html_entities($name);
 ```
 html_entities should be used in every single part of the visual layer (html) where the user could injects malicious code, and it’s a real tedious work.   BladeOne does it automatically.
 ```php 
@@ -75,7 +157,7 @@ My name is {{$name}}
 ```
 ## Easy to use
 
-BladeOne is focused in templates and the syntax of the code is aiming to be clean.
+BladeOne is focused on an easy syntax that it's fast to learn and to write, while it could keep the power of PHP.  
 
 Let's consider the next template:
 
@@ -94,7 +176,7 @@ With BladeOne, we could do the same with
     @nextforeach
 </select>
 ```
-And with html extension we could even reduce to
+And if we use thehtml extension we could even reduce to
 
 ```php // template.blade.php
 @select('id1')
@@ -105,16 +187,16 @@ And with html extension we could even reduce to
 
 
 
-## Performance  
+### Performance
 
 This library works in two stages.   
 
-The first is when the template is called the first time. In this case, the template is compiled and stored in a folder.   
-The second time the template is called then, it uses the compiled file.   The compiled file consist mainly in native PHP, so **the performance is equals than native code.** since the compiled version IS PHP.
+The first is when the template calls the first time. In this case, the template compiles and store in a folder.   
+The second time the template calls then, it uses the compiled file.   The compiled file consist mainly in native PHP, so **the performance is equals than native code.** since the compiled version IS PHP.
 
-## Scalable
+### Scalable
 
-You could add and use your own function by adding a new method (or extending) to the bladeone class. NOTE: The function should starts with the name "compile"
+You could add and use your own function by adding a new method (or extending) to the BladeOne class. NOTE: The function should start with the name "compile"
 ```php
 protected function compileMyFunction($expression)
 {
@@ -130,48 +212,37 @@ Alternatively, BladeOne allows to run arbitrary code from any class or method if
 ```php
 {{SomeClass::SomeMethod('param','param2'...)}}
 ```
+## Install (pick one of the next one)
 
+1) Download the file manually then unzip (using WinRAR,7zip or any other program) https://github.com/EFTEC/BladeOne/archive/master.zip
+2) git clone https://github.com/EFTEC/BladeOne
+3) Composer. See [usage](#usage)
+4) wget https://github.com/EFTEC/BladeOne/archive/master.zip
+   unzip master.zip
 
-# Usage
-example.php:
+## Usage
+
+If you use **composer**, then you could add the library using the next command (command line)  
+
+> composer require eftec/bladeone
+
+If you don't use it, then you could download the library and include it manually.
+
+### Implicit definition
+
 ```php
-<?php
-include "BladeOne.php";
-Use eftec\bladeone;
+use eftec\bladeone\BladeOne;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
-define("BLADEONE_MODE",1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
-$blade=new bladeone\BladeOne($views,$cache);
-echo $blade->run("hello",array("variable1"=>"value1"));
+$blade = new BladeOne($views,$cache,BladeOne::MODE_DEBUG); // MODE_DEBUG allows to pinpoint troubles.
+echo $blade->run("hello",array("variable1"=>"value1")); // it calls /views/hello.blade.php
 ```
 
-_Or using composer's autoload.php_
-```php
-<?php
-require "vendor/autoload.php";
+Where `$views` is the folder where the views (templates not compiled) will be stored. 
+`$cache` is the folder where the compiled files will be stored.
 
-Use eftec\bladeone;
-
-$views = __DIR__ . '/views';
-$cache = __DIR__ . '/cache';
-define("BLADEONE_MODE",1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
-$blade=new bladeone\BladeOne($views,$cache);
-echo $blade->run("hello",array("variable1"=>"value1"));
-```
-_(modify composer.json as follow) and run "composer update"_
-```json
-"autoload": {
-  "psr-4": {
-    "eftec\\": "vendor/eftec/"
-  }
-}
-```  
-
-Where $views is the folder where the views (templates not compiled) will be stored. 
-$cache is the folder where the compiled files will be stored.
-
-In this example, the BladeOne opens the template **hello**. So in the views folders it should exists a file called **hello.blade.php**
+In this example, the BladeOne opens the template **hello**. So in the views folder it should exist a file called **hello.blade.php**
 
 views/hello.blade.php:
 ```html
@@ -179,315 +250,236 @@ views/hello.blade.php:
 {{$variable1}}
 ```
 
-# Business Logic/Controller methods
+### Explicit
 
-## constructor
+In this mode, it uses the folders ```__DIR__/views``` and ```__DIR__/compiles```, also it uses the mode as MODE_AUTO.
+
 ```php
-$blade=new bladeone\BladeOne($views,$cache);
+use eftec\bladeone\BladeOne;
+
+$blade = new BladeOne(); // MODE_DEBUG allows to pinpoint troubles.
+echo $blade->run("hello",array("variable1"=>"value1")); // it calls /views/hello.blade.php
 ```
-- BladeOne(templatefolder,compiledfolder) Creates the instance of BladeOne.
--   templatefolders indicates the folder (without ending backslash) of where the template files (*.blade.php) are located.
--   compiledfolder indicates the folder where the result of files will be saves. This folder should has write permission. Also, this folder could be located outside of the Web Root.
 
+### Fluent
 
-
-## run
 ```php
+use eftec\bladeone\BladeOne;
+
+$blade = new BladeOne(); // MODE_DEBUG allows to pinpoint troubles.
+echo $blade->setView('hello')    // it sets the view to render
+           ->share(array("variable1"=>"value1")) // it sets the variables to sends to the view            
+           ->run(); // it calls /views/hello.blade.php
+```
+
+## Filter (Pipes)
+
+It is possible to modify the result by adding filters to the result.
+
+Let's say we have the next value $name='Jack Sparrow'
+
+```php
+$blade=new BladeOne();
+$blade->pipeEnable=true; // pipes are disable by default so it must be enable.
+echo $blade->run('template',['name'=>'Jack Sparrow']);
+```
+
+Our view could look like:
+
+```php
+ {{$name}}  or {!! $name !!} // Jack Sparrow
+```
+
+What if we want to show the name in uppercase?.
+
+We could do in our code $name=strtoupper('Jack Sparrow'). With Pipes, we could do the same as follow:
+
+```php
+ {{$name | strtoupper}} // JACK SPARROW 
+```
+
+We could also add arguments and chain methods.
+
+```php
+ {{$name | strtoupper | substr:0,5}} // JACK
+```
+
+You can find more information on https://github.com/EFTEC/BladeOne/wiki/Template-Pipes-(Filter)
+
+
+
+## Security (optional)
+
+```php
+require "vendor/autoload.php";
+
+Use eftec\bladeone;
+
+$views = __DIR__ . '/views';
+$cache = __DIR__ . '/cache';
+$blade=new bladeone\BladeOne($views,$cache,BladeOne::MODE_AUTO);
+
+$blade->setAuth('johndoe','admin'); // where johndoe is an user and admin is the role. The role is optional
+
 echo $blade->run("hello",array("variable1"=>"value1"));
 ```
-- run([template,[array])  Runs the template and generates a compiled version (if its required), then it shows the result.
--   template is the template to open. The dots are used for to separate folders.  If the template is called "folder.example" then the engine tries to open the file "folder\example.blade.php"
--   array (optional). Indicates the values to use for the template.  For example ['v1'=>10'], indicates the variable $v1 is equals to 10
 
-## BLADEONE_MODE (global constant) (optional)
-```php
-define("BLADEONE_MODE",1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
-```
-- BLADEONE_MODE Is a global constant that defines the behaviour of the engine.
--   1=forced. Indicates that the engine always will compile the template.
--   2=fast. Indicates that the engine always will use the compiled version
+If you log in using blade then you could use the tags @auth/@endauth/@guest/@endguest
 
 
-# Template tags
-
-## Template Inheritance
-
-## In the master page (layout)
-|Tag|Note|status|
-|---|---|---|
-|@section('sidebar')|Start a new section|0.2b ok|
-|@show|Indicates where the content of section will be displayed|0.2 ok|
-|@yield('title')|Show here the content of a section|0.2b ok|
-
-## Using the master page (using the layout)
-|Tag|Note|status|
-|---|---|---|
-|@extends('layouts.master')|Indicates the layout to use|0.2b ok|
-|@section('title', 'Page Title')|Sends a single text to a section|0.2b ok|
-|@section('sidebar')|Start a block of code to send to a section|0.2b ok|
-|@endsection|End a block of code|0.2b ok|
-|@parent|Show the original code of the section|REMOVED(*)|
-
-Note :(*) This feature is in the original documentation but its not implemented neither its required. May be its an obsolete feature.
-
-## variables
-|Tag|Note|status|
-|---|---|---|
-|{{$variable1}}|show the value of the variable using htmlentities (avoid xss attacks)|0.2b ok|
-|@{{$variable1}}|show the value of the content directly (not evaluated, useful for js)|0.2b ok|
-|{!!$variable1!!}|show the value of the variable without htmlentities (no escaped)|0.2b ok|
-|{{ $name or 'Default' }}|value or default|0.2b ok|
-|{{Class::StaticFunction($variable)}}|call and show a function (the function should return a value)|0.2b ok|
-
-## logic
-|Tag|Note|status|
-|---|---|---|
-|@if (boolean)|if logic-conditional|0.2b ok|
-|@elseif (boolean)|else if logic-conditional|0.2b ok|
-|@else|else logic|0.2b ok|
-|@endif|end if logic|0.2b ok|
-|@unless(boolean)|execute block of code is boolean is false|0.2b ok|
-
-## loop
-
-### @for($variable;$condition;$increment) / @endfor
-_Generates a loop until the condition is meet and the variable is incremented for each loop_   
-
-|Tag|Note|Example|
-|---|---|---|
-|$variable|is a variable that should be initialized.|$i=0|  
-|$condition|is the condition that must be true, otherwise the cycle will end.|$i<10|
-|$increment|is how the variable is incremented in each loop.|$i++|
-
-Example:   
 ```html
-@for ($i = 0; $i < 10; $i++)
-    The current value is {{ $i }}<br>
-@endfor
+@auth
+    // The user is authenticated...
+@endauth
+
+@guest
+    // The user is not authenticated...
+@endguest
 ```
-Returns:   
+
+or
+
 ```html
-The current value is 0
-The current value is 1
-The current value is 2
-The current value is 3
-The current value is 4
-The current value is 5
-The current value is 6
-The current value is 7
-The current value is 8
-The current value is 9
-```
+@auth('admin')
+    // The user is authenticated...
+@endauth
 
-### @foreach($array as $alias) / @endforeach
-Generates a loop for each values of the variable.    
-
-|Tag|Note|Example|
-|---|---|---|
-|$array|Is an array with values.|$countries|  
-|$alias|is a new variable that it stores each interaction of the cycle.|$country|
-
-Example: ($users is an array of objects)
-```html
-@foreach($users as $user)
-    This is user {{ $user->id }}
-@endforeach
-```
-Returns:
-```html
-This is user 1
-This is user 2
-```
-
-### @forelse($array as $alias) / @empty / @endforelse
-Its the same than foreach but jumps to the @empty tag if the array is null or empty   
-
-|Tag|Note|Example|
-|---|---|---|
-|$array|Is an array with values.|$countries|  
-|$alias|is a new variable that it stores each interaction of the cycle.|$country|
-
-
-Example: ($users is an array of objects)
-```html
-@forelse($users as $user)
-    <li>{{ $user->name }}</li>
-@empty
-    <p>No users</p>
-@endforelse
-```
-Returns:
-```html
-John Doe
-Anna Smith
-```
-
-### @while($condition) / @endwhile
-Loops until the condition is not meet.
-
-|Tag|Note|Example|
-|---|---|---|
-|$condition|The cycle loops until the condition is false.|$counter<10|  
-
-
-Example: ($users is an array of objects)
-```html
-@set($whilecounter=0)
-@while($whilecounter<3)
-    @set($whilecounter)
-    I'm looping forever.<br>
-@endwhile
-```
-Returns:
-```html
-I'm looping forever.
-I'm looping forever.
-I'm looping forever.
-```
-
-### @splitforeach($nElem,$textbetween,$textend="")  inside @foreach
-This functions show a text inside a @foreach cycle every "n" of elements.  This function could be used when you want to add columns to a list of elements.   
-NOTE: The $textbetween is not displayed if its the last element of the last.  With the last element it show the variable $textend
-
-|Tag|Note|Example|
-|---|---|---|
-|$nElem|Number of elements|2, for every 2 element the text is displayed|  
-|$textbetween|Text to show|'</tr><tr>'| 
-|$textend|Text to show|'</tr>'| 
-
-Example: ($users is an array of objects)
-```html
-<table border="1">
-<tr>
-@foreach($drinks7 as $drink)
-    <td>{{$drink}}</td>
-    @splitforeach(2,'</tr><tr>','</tr>')
-    @endforeach
-</table>
-```
-Returns a table with 2 columns.
-
-### @continue / @break
-Continue jump to the next iteraction of a cycle.  @Break jump out of a cycle.
-
-|Tag|Note|Example|
-|---|---|---|
-
-Example: ($users is an array of objects)
-```html
-@foreach($users as $user)
-    @if($user->type == 1) // ignores the first user John Smith
-    @continue
-    @endif
-    <li>{{ $user->type }} - {{ $user->name }}</li>
-
-    @if($user->number == 5) // ends the cycle.
-        @break
-    @endif
-@endforeach
-```
-Returns:
-```html
-2 - Anna Smith
+@guest('admin')
+    // The user is not authenticated...
+@endguest
 ```
 
 
-## Sub Views
-|Tag|Note|status|
-|---|---|---|
-|@include('folder.template')|Include a template|0.2b ok|
-|@include('folder.template',['some' => 'data'])|Include a template with new variables|0.2b ok|
-|@each('view.name', $array, 'variable')|Includes a template for each element of the array|0.2b ok|
-Note: Templates called folder.template is equals to folder/template
 
-## Comments
-|Tag|Note|status|
-|---|---|---|
-|{{-- text --}}|Include a comment|0.2b ok|
-
-## Stacks
-|Tag|Note|status|
-|---|---|---|
-|@push('elem')|Add the next block to the push stack|0.2b ok|
-|@endpush|End the push block|0.2b ok|
-|@stack('elem')|Show the stack|0.2b ok|
-
-## @set (new for 1.5)
-@set($variable=[value])
-@set($variable) is equals to @set($variable=$variable+1)
-- $variable define the variable to add. If not value is defined the it adds +1 to a variable.
-- value (option) define the value to use.
-
-## Service Inject
-|Tag|Note|status|
-|---|---|---|
-|@inject('metrics', 'App\Services\MetricsService')|Used for insert a Laravel Service|NOT SUPPORTED|
-
-## Extending Blade
-Not compatible with the extension of Laravel's Blade.
-
-# Extensions Libraries (optional) 
-[BladeOneHtml Documentation](BladeOneHtml.md)
-
-[BladeOneLogic Documentation](BladeOneLogic.md)
+## Extensions Libraries (optional)
 
 [BladeOneCache Documentation](BladeOneCache.md)
 
-# Definition of Blade Template
-https://laravel.com/docs/5.2/blade
+[https://github.com/eftec/BladeOneHtml](https://github.com/eftec/BladeOneHtml)
 
-#Differences between Blade and BladeOne
 
-- Laravel's extension removed.
-- Dependencies to other class removed (around 30 classes).
-- The engine is self contained.
-- Setter and Getters removed. Instead, we are using the PHP style (public members).
-- BladeOne doesn't support static calls.
+## Calling a static methods inside the template.
 
-# Differences between Blade+Laravel and BladeOne+BladeOneHTML
+Since **3.34**, BladeOne allows to call a static method inside a class.
 
-Instead of use the Laravel functions, for example Form::select
-```html
-{{Form::select('countryID', $arrayCountries,$countrySelected)}}
+Let's say we have a class with namespace \namespace1\namespace2
+
+```php
+namespace namespace1\namespace2 {
+    class SomeClass {
+        public static function Method($arg='') {
+            return "hi world";
+        }
+    }
+}
 ```
 
-We have native tags as @select,@item,@items and @endselect
+### Method 1 PHP Style
+
+We could add a "use" in the template.  Example:
+
+Add the next line to the template
 ```html
-@select('countryID')
-    @item('0','--Select a country--',$countrySelected)
-    @items($arrayCountries,'id','name',$countrySelected)
-@endselect()
+@use(\namespace1\namespace2)
 ```
 
-This new syntaxis add an (optionally) a non-selected row.
-Also, BladeOneHTML adds multiple select, fixed values (without array), grouped select and many more.
+and the next lines to the template (different methods)
+
+```html
+{{SomeClass::Method()}}
+{!! SomeClass::Method() !!}
+@SomeClass::Method()
+```
+
+> All those methods are executed at runtime
+
+
+### Method 2 Alias
+Or we could define alias for each classes.
+
+php code:
+```php
+    $blade = new BladeOne();
+    // with the method addAliasClasses
+    $blade->addAliasClasses('SomeClass', '\namespace1\namespace2\SomeClass');
+    // with the setter setAliasClasses
+    $blade->setAliasClasses(['SomeClass'=>'\namespace1\namespace2\SomeClass']);
+    // or directly in the field
+    $blade->aliasClasses=['SomeClass'=>'\namespace1\namespace2\SomeClass'];
+```
+
+Template:
+```html
+{{SomeClass::Method()}}
+{!! SomeClass::Method() !!}
+@SomeClass::Method()
+```
+
+> We won't need alias or use for global classes.
 
 
 
-#Version
+## Named argument (since 3.38)
 
-- 2016-06-08 0.2. Beta First publish launch.
-- 2016-06-09 1.0 Version. Most works. Added extensions and error control with a tag is not defined.
-- 2016-06-09 1.1 Some fine tune.
-- 2016-06-10 1.2 New changes.  Added namespaces (for autocomplete and compatibility with composer)
-- 2016-06-12 1.3 Lots of clean up. I removed some unused parameters.  I fixed a problem with forced in BladeOne.  I separates the doc per extension.
-- 2016-06-24 1.4 Updates extensions.  Now it uses strut instead of classes. Added a new extension BladeOneCache.
-- 2016-07-03 1.5 New features such as **@set** command
-- 2016-08-14 1.6 Some cleanups. Add new documentation   
-- 2017-02-20 1.6 More cleanups. Refactored file,image and other tags.
-- 2017-04-09 1.8 Creates directory automatically. Some fixes. Add new feature **@splitforeach**.    
-    
+BladeOne allows named arguments.  This feature must be implemented per function.
+
+Let's say the next problem:
+
+It is the old library BladeOneHtml:
+
+```
+@select('id1')
+    @item('0','--Select a country--',"",class='form-control'")
+    @items($countries,'id','name',"",$countrySelected)
+@endselect
+```
+
+And it is the next library:
+
+```html
+@select(id="aaa" value=$selection values=$countries alias=$country)
+    @item(value='aaa' text='-- select a country--')
+    @items( id="chkx" value=$country->id text=$country->name)
+@endselect
+```
+
+The old method **select** only allows a limited number of arguments. And the order of the arguments is important.
+
+The new method **select** allows to add different types of arguments 
+
+## BladeOneHtml
+
+It is a new extension to BladeOne. It allows to create html components easily and with near-to-native performance.
+
+It uses a new feature of BladeOne: named arguments
+
+Example to create a select:
+
+```html
+@select(id="aaa" value=$selection values=$countries alias=$country)
+    @item(value='aaa' text='-- select a country--')
+    @items( id="chkx" value=$country->id text=$country->name)
+@endselect
+```
+
+[https://github.com/eftec/BladeOneHtml](https://github.com/eftec/BladeOneHtml)
+
+You could download it or add it via Composer
+
+> composer require eftec/bladeonehtml
 
 
-#Collaboration
+## Collaboration
 
 You are welcome to use it, share it, ask for changes and whatever you want to. Just keeps the copyright notice in the file.
 
-#Future
-I checked the code of BladeOne and i know that there are a lot of room for improvement.
+## Future
+* Blade locator/container
 
 
-#License
+
+## License
 MIT License.
-BladeOne (c) 2016 Jorge Patricio Castro Castillo
-Blade (c) 2012 Laravel Team (This code is based and use  the work of the team of Laravel.)
+BladeOne (c) 2016-2021 Jorge Patricio Castro Castillo
+Blade (c) 2012 Laravel Team (This code is based and inspired in the work of the team of Laravel, however BladeOne is mostly a original work)
+
