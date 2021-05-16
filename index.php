@@ -1,6 +1,7 @@
 <?php
 
-use eftec\BladeOne\BladeOne;
+
+use eftec\bladeone\BladeOne;
 
 include "vendor/autoload.php";
 
