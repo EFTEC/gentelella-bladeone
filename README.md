@@ -37,7 +37,7 @@ Just download the folder to a web server and run /index.php
 
 ```
 <?php
-include "vendor/eftec/bladeone/BladeOne.php";
+include "vendor/autoload.php";
 use eftec\bladeone;
 
 $blade=new bladeone\BladeOne(__DIR__.'/views',__DIR__ . '/compiled');

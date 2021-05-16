@@ -24,7 +24,7 @@ if (1==3) {
 
         fwrite($fp, '<?php' . "\n");
         fwrite($fp, '// Copyright (c) Jorge Castro Castillo.  All rights reserved. MIT License' . "\n\n");
-        fwrite($fp, 'include "vendor/eftec/bladeone/BladeOne.php";' . "\n");
+        fwrite($fp, 'include "vendor/autoload.php";' . "\n");
         fwrite($fp, 'use eftec\bladeone;' . "\n");
         fwrite($fp, '$blade=new bladeone\BladeOne(__DIR__.\'/views\',__DIR__ . \'/compiled\');' . "\n");
         fwrite($fp, 'define("BLADEONE_MODE",1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.' . "\n\n");
